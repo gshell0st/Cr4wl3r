@@ -49,7 +49,7 @@ def simpli(target_url): # In this line is simplify mode, so in this function, is
     wordlist = input('[!] Put here the path file of the wordlist [!] : ')
     if wordlist == '':
         esp()
-        with open('/home/gshell0st/Documentos/V4L-D1R/wordlist/dirb/common.txt', 'r') as wordlist_file:
+        with open('THE WORDLIST PATH=--=-=-=-=-=-=-=', 'r') as wordlist_file:
                 for line in wordlist_file:                 # In this for          |
                     word = line.strip()                    # is the logic of      |
                     test_url = target_url + '/' + word     # the wordlist process |
@@ -62,7 +62,7 @@ def simpli(target_url): # In this line is simplify mode, so in this function, is
                         pass
     else:
         esp()
-        with open(wordlist, 'r') as wordlist_file: # The file path of the wordlist / exemple: '/home/gshell0st/Documentos/V4L-D1R/wordlist/directory.txt'
+        with open(wordlist, 'r') as wordlist_file: 
                 for line in wordlist_file:
                     word = line.strip()
                     test_url = target_url + '/' + word
@@ -82,9 +82,9 @@ def recursive(): # this function is about a recursive mode, so this def shows ev
     wordlist = input('[!] Put here the path file of the wordlist [!] : ')
     if wordlist == '': # here i make te logic of wordlist, so if the user dosent input anything the code go direct to default wordlist
         esp()
-        print('[!] Using the default wordlist : /home/gshell0st/Documentos/V4L-D1R/wordlist/directory.txt [!]')
+        print('[!] Using the default wordlist [!]')
         esp()
-        with open('/home/gshell0st/Documentos/V4L-D1R/wordlist/directory.txt', 'r') as wordlist_file: # The file path of the wordlist
+        with open('THE WORDLIST PATH=--=-=-=-=-=-=-=', 'r') as wordlist_file: # The file path of the wordlist
             for line in wordlist_file:               # In this for          |
                 word = line.strip()                  # is the logic of      |
                 test_url = target_url + '/' + word   # the wordlist process |
